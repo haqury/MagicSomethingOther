@@ -1,0 +1,87 @@
+keys,en,ru
+menu.title,Magic Something Other,Magic Something Other
+menu.singleplayer,Singleplayer,Одиночная игра
+menu.host,Host game,Создать сервер
+menu.join,Join,Подключиться
+menu.ip,IP,IP
+menu.settings,Settings,Настройки
+menu.status.port_busy,Port 7777 is busy,Порт 7777 занят
+menu.status.bad_address,Enter an IP address,Введите IP-адрес
+menu.status.connection_failed,Could not connect,Не удалось подключиться
+menu.status.server_lost,Host disconnected,Хост отключился
+settings.title,Settings,Настройки
+settings.graphics,Graphics,Графика
+settings.controls,Controls,Управление
+settings.language,Language,Язык
+settings.back,Back,Назад
+settings.window_mode,Window mode,Режим окна
+settings.windowed,Windowed,В окне
+settings.borderless,Borderless,Без рамки
+settings.fullscreen,Fullscreen,Полный экран
+settings.resolution,Resolution,Разрешение
+settings.vsync,VSync,Вертикальная синхронизация
+settings.vsync_off,Off,Выкл.
+settings.vsync_on,On,Вкл.
+settings.vsync_adaptive,Adaptive,Адаптивная
+settings.max_fps,Frame limit,Предел кадров
+settings.fps_uncapped,Uncapped,Без предела
+settings.ui_scale,UI scale,Масштаб интерфейса
+settings.reset_bindings,Reset to defaults,Сбросить клавиши
+settings.press_key,Press a key…,Нажмите клавишу…
+settings.vsync_fallback,Adaptive VSync is unavailable,Адаптивная синхронизация недоступна
+controls.move_left,Move left,Влево
+controls.move_right,Move right,Вправо
+controls.move_up,Move up,Вверх
+controls.move_down,Move down,Вниз
+controls.sprint,Dash,Рывок
+controls.cast_lmb,Spell 1,Заклинание 1
+controls.cast_rmb,Spell 2,Заклинание 2
+controls.cast_mmb,Spell 3,Заклинание 3
+prep.title,Preparation,Подготовка
+prep.essence,Essence,Эссенция
+prep.ready,Ready,Готово
+prep.start,Start match,Начать матч
+prep.waiting,Waiting for players,Ожидание игроков
+prep.hp,Health,Здоровье
+prep.speed,Speed,Скорость
+prep.stamina,Stamina,Выносливость
+prep.dash,Dash power,Сила рывка
+prep.vision,Vision,Обзор
+prep.hollow,Hollow,Полый
+prep.hollow_on,Hollow,Полый
+prep.solid,Solid,Твёрдый
+prep.spell_lmb,Left slot,Левый слот
+prep.spell_rmb,Right slot,Правый слот
+prep.spell_mmb,Middle slot,Средний слот
+prep.empty,Empty,Пусто
+prep.element,Element,Элемент
+prep.form,Form,Форма
+element.fire,Fire,Огонь
+element.water,Water,Вода
+element.earth,Earth,Земля
+element.air,Air,Воздух
+element.ice,Ice,Лёд
+element.light,Light,Свет
+element.lightning,Lightning,Молния
+form.projectile,Projectile,Снаряд
+form.area,Area,Область
+form.wall,Wall,Стена
+form.beam,Beam,Луч
+form.self,Self,На себя
+form.around,Around,Вокруг себя
+form.mine,Mine,Мина
+form.relief,Relief,Рельеф
+prep.power,Power,Сила
+prep.area,Size,Размер
+prep.range,Range,Дальность
+prep.duration,Duration,Длительность
+prep.object_hp,Durability,Прочность
+prep.rejected,Loadout rejected,Сборка отклонена
+prep.map,Map,Карта
+map.meadow,Green meadow,Зелёная поляна
+map.ruins,Ancient ruins,Древние руины
+map.arena,Battle arena,Боевая арена
+wave.title,Wave %d,Волна %d
+wave.enemies,Enemies: %d,Враги: %d
+wave.build,Build %d s,Стройка %d с
+wave.defeat,Defeat,Поражение

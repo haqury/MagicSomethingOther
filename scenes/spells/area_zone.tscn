@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://area001"]
+
+[ext_resource type="Script" path="res://scenes/spells/area_zone.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/sprites/fx/ring.png" id="2"]
+[ext_resource type="Script" path="res://scripts/spell_visual.gd" id="3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 36.0
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_add"]
+blend_mode = 1
+
+[node name="AreaZone" type="Area2D"]
+collision_mask = 30
+monitoring = true
+script = ExtResource("1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1")
+
+[node name="Body" type="Sprite2D" parent="."]
+material = SubResource("CanvasItemMaterial_add")
+scale = Vector2(0.56, 0.56)
+texture = ExtResource("2")
+
+[node name="Visual" type="Node" parent="."]
+script = ExtResource("3")
+kind = 0
+spin_speed = 0.8
+pulse_speed = 4.0
+pulse_amount = 0.06

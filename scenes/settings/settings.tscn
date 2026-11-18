@@ -1,0 +1,196 @@
+[gd_scene load_steps=3 format=3 uid="uid://settings001"]
+
+[ext_resource type="Script" path="res://scenes/settings/settings.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/night_backdrop.tscn" id="2"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="NightBackdrop" parent="." instance=ExtResource("2")]
+layout_mode = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer"]
+layout_mode = 2
+custom_minimum_size = Vector2(520, 0)
+
+[node name="Title" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.84, 0.48, 1)
+theme_override_font_sizes/font_size = 26
+text = "settings.title"
+horizontal_alignment = 1
+
+[node name="Tabs" type="TabContainer" parent="CenterContainer/PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Graphics" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="WindowModeOption" type="OptionButton" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Graphics"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ResolutionOption" type="OptionButton" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Graphics"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VsyncOption" type="OptionButton" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Graphics"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MaxFpsOption" type="OptionButton" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Graphics"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="UiScaleOption" type="OptionButton" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Graphics"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="VsyncStatus" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Graphics"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Controls" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs"]
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="BindingList" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="move_left" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/move_left"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "controls.move_left"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/move_left"]
+layout_mode = 2
+
+[node name="move_right" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/move_right"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "controls.move_right"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/move_right"]
+layout_mode = 2
+
+[node name="move_up" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/move_up"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "controls.move_up"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/move_up"]
+layout_mode = 2
+
+[node name="move_down" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/move_down"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "controls.move_down"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/move_down"]
+layout_mode = 2
+
+[node name="sprint" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/sprint"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "controls.sprint"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/sprint"]
+layout_mode = 2
+
+[node name="cast_lmb" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/cast_lmb"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "controls.cast_lmb"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/cast_lmb"]
+layout_mode = 2
+
+[node name="cast_rmb" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/cast_rmb"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "controls.cast_rmb"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/cast_rmb"]
+layout_mode = 2
+
+[node name="cast_mmb" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/cast_mmb"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "controls.cast_mmb"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/cast_mmb"]
+layout_mode = 2
+
+[node name="ui_cancel" type="HBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList"]
+layout_mode = 2
+
+[node name="ActionLabel" type="Label" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/ui_cancel"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Escape"
+
+[node name="BindButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls/BindingList/ui_cancel"]
+layout_mode = 2
+
+[node name="ResetButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Controls"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "settings.reset_bindings"
+
+[node name="Language" type="VBoxContainer" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs"]
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="LanguageOption" type="OptionButton" parent="CenterContainer/PanelContainer/VBoxContainer/Tabs/Language"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="CenterContainer/PanelContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "settings.back"

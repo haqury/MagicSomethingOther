@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://player001"]
+
+[ext_resource type="Script" path="res://scenes/player/player.gd" id="1"]
+[ext_resource type="SpriteFrames" path="res://resources/player_frames.tres" id="4_player"]
+[ext_resource type="Resource" path="res://data/player_stats_default.tres" id="2"]
+[ext_resource type="Resource" path="res://data/spells/spell_base.tres" id="3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 12.0
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_1"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/2/path = NodePath(".:current_hp")
+properties/2/spawn = true
+properties/3/path = NodePath(".:current_stamina")
+properties/3/spawn = true
+properties/4/path = NodePath(".:essence")
+properties/4/spawn = true
+properties/5/path = NodePath(".:max_hp")
+properties/5/spawn = true
+properties/6/path = NodePath(".:move_speed")
+properties/6/spawn = true
+properties/7/path = NodePath(".:max_stamina")
+properties/7/spawn = true
+properties/8/path = NodePath(".:dash_multiplier")
+properties/8/spawn = true
+properties/9/path = NodePath(".:vision_zoom")
+properties/9/spawn = true
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1")
+stats = ExtResource("2")
+spell_lmb = ExtResource("3")
+spell_rmb = ExtResource("3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1")
+
+[node name="Body" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -18)
+sprite_frames = ExtResource("4_player")
+animation = &"idle_s"
+frame = 0
+centered = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_1")

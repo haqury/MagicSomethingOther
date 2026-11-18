@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlayerStats" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/player_stats.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+essence = 0
+max_hp = 100.0
+move_speed = 180.0
+max_stamina = 100.0
+dash_multiplier = 1.8
+vision_zoom = 1.0
